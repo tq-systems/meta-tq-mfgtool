@@ -1,0 +1,59 @@
+This README file contains information on the contents of the
+meta-tq layer.
+
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.yoctoproject.org/poky
+  branch: krogoth
+  layers: meta
+  revision: HEAD
+
+  URI: https://github.com/Freescale/meta-fsl-arm.git
+  layers: meta-fsl-arm
+  branch: krogoth
+
+Patches
+=======
+
+Please submit any patches against the tq layer to the
+the maintainer:
+
+Maintainer: Markus Niebel <Markus.Niebel@tq-group.com>
+
+
+Table of Contents
+=================
+
+  I. Adding the tq-mfgtool layer to your build
+ II. Supported machines
+
+
+I. Adding the meta-tq layer to your build
+=========================================
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the tq layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the tq layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-poky \
+    /path/to/yocto/meta-fsl-arm \
+    /path/to/yocto/meta-tq \
+    /path/to/yocto/meta-tq-mfgtool \
+    "
+
+II. Machines
+============
+
+i.MX based machines from the meta-tq layer are supported.
