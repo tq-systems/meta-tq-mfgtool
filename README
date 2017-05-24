@@ -18,6 +18,10 @@ This layer depends on:
   layers: meta-fsl-arm
   branch: krogoth
 
+  URI: https://github.com/tq-systems/meta-tq.git
+  layers: meta-tq
+  branch: krogoth
+
 Patches
 =======
 
@@ -32,6 +36,7 @@ Table of Contents
 
   I. Adding the tq-mfgtool layer to your build
  II. Supported machines
+III. Supported images
 
 
 I. Adding the meta-tq layer to your build
@@ -57,3 +62,10 @@ II. Machines
 ============
 
 i.MX based machines from the meta-tq layer are supported.
+
+III. Supported images
+=====================
+
+This layer adds support to build U-Boot, kernel, devicetree and initramfs for
+the Mfgtool using recipe fsl-image-mfgtool-initramfs from meta-fsl-arm
+
