@@ -1,0 +1,35 @@
+From 98c684e2a571c0810c1bf663168a31a0e08983e4 Mon Sep 17 00:00:00 2001
+From: Markus Niebel <Markus.Niebel@tq-group.com>
+Date: Thu, 15 Jun 2017 13:04:07 +0200
+Subject: [PATCH] Makefile: add LDFLAGS to fix build error during QA stage
+
+Found-by: Joel Esponde <joel.espo...@honeywell.com>
+Signed-off-by: Bas Mevissen <bas.mevis...@emcodev.nl>
+
+taken from http://www.mail-archive.com/meta-freescale@yoctoproject.org/msg20098.html
+
+Signed-off-by: Markus Niebel <Markus.Niebel@tq-group.com>
+---
+ Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index df19c9f..6b66058 100644
+--- a/Makefile
++++ b/Makefile
+@@ -5,10 +5,10 @@ BINDIR ?= /usr/bin
+ all: uuc sdimage
+ 
+ uuc: uu.c
+-	$(CC)  uu.c -o uuc -lpthread
++	$(CC)  uu.c -o uuc  $(LDFLAGS) -lpthread
+ 
+ sdimage: sdimage.c
+-	$(CC) sdimage.c -o sdimage
++	$(CC) sdimage.c -o sdimage $(LDFLAGS)
+ 
+ install:
+ 	install -d $(DESTDIR)$(BINDIR)
+-- 
+1.9.1
+
