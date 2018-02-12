@@ -61,7 +61,8 @@ other layers needed. e.g.:
 II. Machines
 ============
 
-i.MX based machines from the meta-tq layer are supported.
+i.MX based machines from the meta-tq layer are supported. For compatibility
+of TQ modules from meta-tq layer see README in meta-tq
 
 III. Supported images
 =====================
