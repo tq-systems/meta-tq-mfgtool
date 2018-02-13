@@ -8,7 +8,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/${ORIG_PN}-${PV}:${THISDIR}/${ORIG_PN}:"
 SRC_URI += "file://defconfig"
 
 SRCBRANCH = "TQMaxx2-v4.1.15-rel_imx_4.1.15_2.0.0_ga"
-SRCREV = "1c77cc13d96a18e7486f8ab5bc6948a31366ad5a"
+SRCREV = "beb872cbd276167c89bb008843d029df4d5d07e4"
 
 
 SRCBRANCH_tqma6q-nav = "NAV-v4.1.15-rel_imx_4.1.15_2.0.0_ga"
