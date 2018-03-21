@@ -10,17 +10,17 @@ Dependencies
 This layer depends on:
 
   URI: git://git.yoctoproject.org/poky
-  branch: morty
+  branch: pyro
   layers: meta
   revision: HEAD
 
   URI: https://github.com/Freescale/meta-freescale.git
   layers: meta-freescale
-  branch: morty
+  branch: pyro
 
   URI: https://github.com/tq-systems/meta-tq.git
   layers: meta-tq
-  branch: morty
+  branch: pyro
 
 Patches
 =======
