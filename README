@@ -53,7 +53,7 @@ other layers needed. e.g.:
   BBLAYERS ?= " \
     /path/to/yocto/meta \
     /path/to/yocto/meta-poky \
-    /path/to/yocto/meta-fsl-arm \
+    /path/to/yocto/meta-freescale \
     /path/to/yocto/meta-tq \
     /path/to/yocto/meta-tq-mfgtool \
     "
@@ -68,5 +68,4 @@ III. Supported images
 =====================
 
 This layer adds support to build U-Boot, kernel, devicetree and initramfs for
-the Mfgtool using recipe fsl-image-mfgtool-initramfs from meta-fsl-arm
-
+the Mfgtool using recipe fsl-image-mfgtool-initramfs from meta-freescale
